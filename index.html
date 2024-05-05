@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch your Pokemon!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        id="pokemon_name"
+        placeholder="Search a Pokemon"
+        required
+      />
+      <button onclick="fetchPokemon()">Fetch</button>
+    </div>
+    <br />
+    <img src="./Images/unknown.png" alt="Pokemon" id="pokemonImage" /> <br />
+    <div class="pokemon_info">
+      <p id="pokemon_id">Pokemon ID: Unknown</p>
+      <p id="pokemon_type">Type: Unknown</p>
+      <p id="pokemon_weight">Weight: Unknown</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
